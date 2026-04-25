@@ -1,32 +1,32 @@
-<section class="contact-section">
-    <div class="contact-container">
-        <div class="contact-info">
-            <h2>Contacto</h2>
-            <p>Para consultas sobre pedidos personalizados o atención al cliente, por favor completa el formulario.</p>
-            <ul class="details">
-                <li><strong>Email:</strong> hola@tuweb.com</li>
-                <li><strong>Ubicación:</strong> Buenos Aires, Argentina</li>
-            </ul>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier Raffia | Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo-container">
+            <a href="index.html"><img src="logo-atelier.jpg" alt="Atelier Raffia" class="logo"></a>
         </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Colección</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+    </nav>
 
-        <form id="contact-form" class="contact-form">
-            <div class="form-group">
-                <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+    <main class="content">
+        <div class="contacto-wrapper">
+            <h2>Contacto</h2>
+            <div class="rrss-links">
+                <a href="https://www.instagram.com/atelierraffia" target="_blank">Instagram: @atelierraffia</a>
+                <a href="mailto:atelierraffia@gmail.com">Email: atelierraffia@gmail.com</a>
             </div>
-            <div class="form-group">
-                <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
-            </div>
-            <div class="form-group">
-                <select id="subject" name="subject">
-                    <option value="consulta">Consulta General</option>
-                    <option value="pedido">Pedido por encargo</option>
-                    <option value="prensa">Prensa / Colaboraciones</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <textarea id="message" name="message" rows="5" placeholder="Tu mensaje..." required></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Enviar Mensaje</button>
-        </form>
-    </div>
-</section>
+        </div>
+    </main>
+</body>
+</html>
