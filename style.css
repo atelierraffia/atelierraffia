@@ -68,12 +68,83 @@ body {
 }
 
 /* FORMULARIO Y CONTACTO */
-.instagram-link {
-    display: block;
-    font-size: 1.2rem;
-    color: #000;
-    text-decoration: none;
-    margin-bottom: 60px;
+.contact-section {
+    padding: 80px 10%;
+    background-color: #fcfcfc;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.details {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.details li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #000;
+}
+
+.submit-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: opacity 0.3s;
+    align-self: flex-start;
+}
+
+.submit-btn:hover {
+    opacity: 0.8;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Estilos para que combine con el resto de la página */
