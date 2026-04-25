@@ -76,9 +76,55 @@ body {
     margin-bottom: 60px;
 }
 
+/* Estilos para que combine con el resto de la página */
 .contact-form {
-    max-width: 500px;
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px; /* Para que no sea demasiado ancho */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.input-group input, 
+.input-group textarea {
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
+    background: transparent;
+    font-family: inherit;
+    outline: none;
+}
+
+.btn-enviar {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn-enviar:hover {
+    background: #333;
+}
 }
 
 .input-group {
