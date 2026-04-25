@@ -3,178 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | Atelier Raffia</title>
+    <title>Contacto — Atelier Raffia</title>
+    <link rel="stylesheet" href="style.css"> 
     <style>
-        /* Estilos base inspirados en diseño de lujo */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Helvetica', Arial, sans-serif;
-            background-color: #ffffff;
-            color: #000000;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 800px;
+        /* Estilos específicos para que el formulario se vea de lujo */
+        .contact-container {
+            max-width: 600px;
             margin: 0 auto;
-            padding: 80px 20px;
+            padding: 40px 20px;
         }
-
-        header {
-            text-align: center;
-            margin-bottom: 100px;
-        }
-
-        .logo {
-            font-size: 24px;
-            letter-spacing: 0.3em;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: #000;
-            font-weight: 300;
-        }
-
-        .section-title {
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
-            margin-bottom: 40px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 10px;
-            font-weight: 400;
-        }
-
-        /* Estilo para Redes Sociales */
-        .social-section {
-            margin-bottom: 80px;
-        }
-
-        .social-link {
-            display: inline-block;
-            color: #000;
-            text-decoration: none;
-            font-size: 18px;
-            letter-spacing: 0.1em;
-            transition: opacity 0.3s ease;
-        }
-
-        .social-link:hover {
-            opacity: 0.6;
-        }
-
-        /* Estilo para el Formulario */
-        .form-section {
-            margin-top: 60px;
-        }
-
+        
         .contact-form {
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            gap: 25px;
+            margin-top: 40px;
         }
 
         .input-group {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            text-align: left;
         }
 
         .input-group label {
-            font-size: 12px;
+            font-size: 11px;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
             color: #666;
         }
 
-        input, textarea {
+        .input-group input, .input-group textarea {
             border: none;
             border-bottom: 1px solid #000;
-            padding: 10px 0;
+            padding: 8px 0;
             font-family: inherit;
-            font-size: 16px;
+            font-size: 15px;
             outline: none;
             background: transparent;
         }
 
-        input:focus, textarea:focus {
-            border-bottom-width: 2px;
+        .social-link-box {
+            margin-bottom: 50px;
+            text-align: center;
         }
 
-        button {
-            margin-top: 20px;
-            background-color: #000;
+        .instagram-button {
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 4px;
+            transition: opacity 0.3s;
+        }
+
+        .instagram-button:hover {
+            opacity: 0.5;
+        }
+
+        .submit-btn {
+            background: #000;
             color: #fff;
             border: none;
-            padding: 15px 40px;
+            padding: 15px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
             font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
             cursor: pointer;
-            transition: background 0.3s ease;
-            align-self: flex-start;
-        }
-
-        button:hover {
-            background-color: #333;
-        }
-
-        footer {
-            margin-top: 100px;
-            text-align: center;
-            font-size: 10px;
-            letter-spacing: 0.1em;
-            color: #999;
-            text-transform: uppercase;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <a href="index.html" class="logo">Atelier Raffia</a>
-        </header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">Atelier Raffia</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="coleccion.html">Colección</a></li>
+            <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+    </nav>
 
-        <main>
-            <section class="social-section">
-                <h2 class="section-title">Instagram</h2>
-                <a href="https://www.instagram.com/atelierraffia" target="_blank" class="social-link">
-                    @atelierraffia
-                </a>
-            </section>
+    <main class="contact-container">
+        <div class="social-link-box">
+            <p style="font-size: 12px; letter-spacing: 2px; color: #999; text-transform: uppercase;">Instagram</p>
+            <a href="https://www.instagram.com/atelierraffia" target="_blank" class="instagram-button">
+                @atelierraffia
+            </a>
+        </div>
 
-            <section class="form-section">
-                <h2 class="section-title">Enviar un Mensaje</h2>
-                
-                <form action="https://formspree.io/f/xzdywder" method="POST" class="contact-form">
-                    
-                    <div class="input-group">
-                        <label for="email">E-mail de contacto</label>
-                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
-                    </div>
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
 
-                    <div class="input-group">
-                        <label for="subject">Asunto</label>
-                        <input type="text" id="subject" name="_subject" placeholder="Consulta sobre pieza artesanal" required>
-                    </div>
+        <div class="form-box">
+            <p style="font-size: 12px; letter-spacing: 2px; color: #999; text-transform: uppercase; text-align: center;">E-mail</p>
+            
+            <form action="https://formspree.io/f/xzdywder" method="POST" class="contact-form">
+                <div class="input-group">
+                    <label>Nombre</label>
+                    <input type="text" name="name" required>
+                </div>
 
-                    <div class="input-group">
-                        <label for="message">Mensaje</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Escribe tu consulta aquí..." required></textarea>
-                    </div>
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+                </div>
 
-                    <input type="hidden" name="_gotcha" style="display:none">
+                <div class="input-group">
+                    <label>Mensaje</label>
+                    <textarea name="message" rows="4" required></textarea>
+                </div>
 
-                    <button type="submit">Enviar</button>
-                </form>
-            </section>
-        </main>
-
-        <footer>
-            &copy; 2026 Atelier Raffia — Handmade for you.
-        </footer>
-    </div>
+                <input type="hidden" name="_gotcha" style="display:none">
+                <button type="submit" class="submit-btn">Enviar Consulta</button>
+            </form>
+        </div>
+    </main>
 
 </body>
 </html>
