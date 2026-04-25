@@ -1,53 +1,32 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | Atelier Raffia</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <div class="wrapper">
-        <nav class="sidebar">
-            <div class="logo-container">
-                <a href="index.html">
-                    <img src="assets/logo.png" alt="Atelier Raffia" class="logo">
-                </a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Colección</a></li>
-                <li><a href="historia.html">Historia</a></li>
-                <li><a href="contacto.html" class="active">Contacto</a></li>
+<section class="contact-section">
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Contacto</h2>
+            <p>Para consultas sobre pedidos personalizados o atención al cliente, por favor completa el formulario.</p>
+            <ul class="details">
+                <li><strong>Email:</strong> hola@tuweb.com</li>
+                <li><strong>Ubicación:</strong> Buenos Aires, Argentina</li>
             </ul>
-        </nav>
+        </div>
 
-        <main class="main-content">
-            <section class="contact-section">
-                <h1>Contacto</h1>
-                <p class="subtitle">Para consultas sobre piezas a medida o prensa, escríbenos a continuación.</p>
-                
-                <form action="https://formspree.io/f/TU_ID_AQUÍ" method="POST" class="contact-form">
-                    <div class="form-group">
-                        <label for="full-name">Nombre Completo</label>
-                        <input type="text" name="name" id="full-name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email-address">Email</label>
-                        <input type="email" name="_replyto" id="email-address" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Mensaje</label>
-                        <textarea rows="5" name="message" id="message" required></textarea>
-                    </div>
-
-                    <button type="submit" class="submit-btn">Enviar</button>
-                </form>
-            </section>
-        </main>
+        <form id="contact-form" class="contact-form">
+            <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <select id="subject" name="subject">
+                    <option value="consulta">Consulta General</option>
+                    <option value="pedido">Pedido por encargo</option>
+                    <option value="prensa">Prensa / Colaboraciones</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" rows="5" placeholder="Tu mensaje..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Enviar Mensaje</button>
+        </form>
     </div>
-
-</body>
-</html>
+</section>
